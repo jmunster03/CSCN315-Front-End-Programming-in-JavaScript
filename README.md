@@ -1,1 +1,2 @@
-# CSCN315-Front-End-Programming-in-JavaScript
+# CSCN315-002 - Front-End-Programming-in-JavaScript
+Jordan Munster
