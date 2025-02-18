@@ -1,8 +1,6 @@
 /* CSS  Stylesheet */
 
-body{
-    background-image: url(https://github.com/jmunster03/CSCN315-Front-End-Programming-in-JavaScript/blob/1cda1587b64382562bd6ea6f4c563c0e89c581ba/images/confetti.png);
-}
+
 
 /*Add a black background color to the top navigation*/
 .topnav {
@@ -34,4 +32,5 @@ body{
 
 h1{
     font-size: 75px;
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
 }
