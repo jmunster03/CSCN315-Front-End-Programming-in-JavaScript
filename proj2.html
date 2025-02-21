@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Individual Case Project 2</title>
+    <script defer src="proj2.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .error { color: red; font-size: 0.9em; }
+        #result { margin-top: 15px; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div id="a" class="rmiddle">
+        <h2><nav style="text-align: center;">
+            <a href="index.html" alt="Home">Home</a>
+    </div>
+    <h1><i>Individual Case Project 2 - User Data Form</i></h1>
+    <h2>Enter Your Information Below</h2>
+    <form id="userForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <span class="error" id="nameError"></span>
+        <br><br>
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" required>
+        <span class="error" id="ageError"></span>
+        <br><br>
+        
+        <label for="hobby">Favorite Hobby:</label>
+        <input type="text" id="hobby" required>
+        <span class="error" id="hobbyError"></span>
+        <br><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+    
+    <div id="result"></div>
+</body>
+</html>
