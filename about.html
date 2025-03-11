@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="about.css">
+<title>About Me</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+<body style="background-color: white;">
+
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a class="active" href="about.html">About Me</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+        <a href="proj3.js">Individual Case 3</a>
+    </div>
+<script>
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("myDIV");
+    var btns = header.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+      });
+    }
+    </script>
+
+<h1 id="demo"><center>About Me</center></h1>
+
+<div id="a">
+    <h2>My name is Jordan Munster and I am a junior at Liberty University majoring in Information Technology with a Web and Mobile Programming cognate. I am on track to graduate in the Spring of 2026.</h2>
+    <br>
+    <img src="https://github.com/jmunster03/CSCN315-Front-End-Programming-in-JavaScript/blob/main/images/JordanMunsterWebPage.jpg?raw=true" style="margin-left: 500px;">
+    <h2>I am from Richmond, Virginia and have lived here my whole life.</h2>
+    <br>
+    <h2>I am an identical twin.</h2>
+    <br>
+    <h2>I love sports! I am a proud Philadelphia Eagles fan (GO BIRDS!). I fell in love with Shooting Sports in the Spring of 2022, right before my freshman year at LU. Since then, I've been on the Action Shooting Team and Air Pistol Team at LU. I also compete in GSSF (Glock) matches back at home with my parents.</h2>
+    <br>
+</div>
+<div id="b">
+    <h2>Another random fact about me is that I recently fell in love with photography, thanks to my roommate.</h2>
+</div>
+
+<div class="slideshow" style="margin-left: 400px;">
+    <img class="mySlides" src="https://github.com/jmunster03/CSCN315-Front-End-Programming-in-JavaScript/blob/main/images/meandash.jpg?raw=true" style="width:60%">
+    <img class="mySlides" src="https://github.com/jmunster03/CSCN315-Front-End-Programming-in-JavaScript/blob/main/images/eagles.png?raw=true" style="width:60%">
+    <img class="mySlides" src="https://github.com/jmunster03/CSCN315-Front-End-Programming-in-JavaScript/blob/main/images/gun1.jpg?raw=true" style="width:60%">
+    <img class="mySlides" src="https://github.com/jmunster03/CSCN315-Front-End-Programming-in-JavaScript/blob/main/images/gun2.jpg?raw=true" style="width:60%">
+    <img class="mySlides" src="https://github.com/jmunster03/CSCN315-Front-End-Programming-in-JavaScript/blob/main/images/shot1.jpg?raw=true" style="width:60%">
+    <img class="mySlides" src="https://github.com/jmunster03/CSCN315-Front-End-Programming-in-JavaScript/blob/main/images/team.png?raw=true" style="width:60%">
+    <img class="rotate mySlides" src="https://github.com/jmunster03/CSCN315-Front-End-Programming-in-JavaScript/blob/main/images/IMG_1384.jpg?raw=true" style="width:60%">
+  
+  
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+
+//Navigation Buttons
+function openOverlay(index) {
+const prevButton = document.createElement('span');
+prevButton.classList.add('prev-btn');
+prevButton.innerHTML = '&#10094;';
+prevButton.onclick = () => showOverlayImage(index - 1);
+
+const nextButton = document.createElement('span');
+nextButton.classList.add('next-btn');
+nextButton.innerHTML = '&#10095;';
+nextButton.onclick = () => showOverlayImage(index + 1);}
+    </script>
+
+
+</body>
+</html>
+

@@ -5,41 +5,35 @@
 <title>Jordan Munster</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </head>
-<body style="background-image: url('https://github.com/jmunster03/CSCN315-Front-End-Programming-in-JavaScript/blob/main/images/confetti.png?raw=true'); background-size: cover;">
+<body style="background-color: white;">
 
 <div class="topnav">
     <a class="active" href="index.html">Home</a>
-    <a href="albums.html">Albums</a>
-    <a href="life.html">Early Life</a>
-    <a href="albums.html">Awards</a>
-    <a href="html2.html">CSS Styles - Week 2</a>
-    <a href="proj2.html">Individual Case 2</a>
+    <a href="about.html">About Me</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
     <a href="proj3.js">Individual Case 3</a>
 </div>
-
-<h1 id="demo"><center>Taylor Swift</center></h1>
-
 <script>
-    //variable
-const myElement = document.getElementById("demo");
-myElement.style.color = "white";
-</script>
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("topnav");
+    var btns = header.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+      });
+    }
+    </script>
 
-<script>
-    //variable
-    let name = "Taylor Swift";
+<h1 id="demo"><center>Jordan Munster</center></h1>
 
-    //alert button/window
-    function myFunction() {
-  alert("December 8th, 2024");
-}
+<div id="a">
+    <h2>Welcome to my page! Here is where you can learn about me.</h2>
+    <img src="https://github.com/jmunster03/CSCN315-Front-End-Programming-in-JavaScript/blob/main/images/JordanMunsterWebPage.jpg?raw=true" style="margin-left: 500px;">
+</div>
 
-
-</script>
-
-<!--alert button/window-->
-<button onclick="myFunction()">When was the last show of the Eras Tour?</button>
-<br>
-<br>
-<img src="https://github.com/jmunster03/CSCN315-Front-End-Programming-in-JavaScript/blob/main/images/TS.png?raw=true">
+</body>
+</html>
 

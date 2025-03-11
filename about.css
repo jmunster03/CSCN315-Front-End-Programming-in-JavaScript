@@ -1,5 +1,4 @@
-/* CSS  Stylesheet */
-
+/* About  Stylesheet */
 
 
 
@@ -30,17 +29,19 @@
     color: white;
   }
 
+img{
+    border-radius: 40px;
+    box-shadow: black 2px 2px 2px ; 
+}
+
 h1{
     font-size: 75px;
 }
 
-#a{
+
+#a, #b{
   h2{
     text-align: center;
-  }
-  img{
-    border-radius: 25px;
-    box-shadow: black 2px 2px 2px ;
   }
 
 }
