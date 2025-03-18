@@ -39,3 +39,30 @@ h1{
   }
 
 }
+
+div.form{
+  text-align: center;
+  padding: 10px;
+
+}
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+label{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+}
+
+span{
+  border-radius: 40px;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
