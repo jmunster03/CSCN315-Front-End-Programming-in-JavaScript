@@ -36,10 +36,10 @@ function validateForm() {
         throw new Error("Passwords do not match.");
       }
   
-      //Validate Phone Number (Basic format)
+      //Validate Phone Number (Basic format) updated with regex
       let phone = form['phone'].value.trim();
-      if (!/^\+?[0-9]{10,15}$/.test(phone)) {
-        throw new Error("Invalid phone number format.");
+      if (!/^\+?[\d\s\-()]{10,15}$/.test(phone)) {
+        throw new Error("Invalid phone number format. Do not use parenthesis, hyphens, or spaces.");
       }
   
       //Validate Date of Birth (User must be 18+)

@@ -58,9 +58,28 @@
         <input type="date" name="dob" />
         <span id="dobError" class="error"></span><br>
       <br>
+      <!-- Reason for Contact -->
+      <h3>Reason for Contact:</h3>
+      <label><input type="checkbox" value="General Inquiry" class="contact-reason-checkbox">General Inquiry</label><br>
+      <label><input type="checkbox" value="Interview" class="contact-reason-checkbox">Interview</label><br>
+      <label><input type="checkbox" value="Feedback" class="contact-reason-checkbox">Feedback</label><br>
+      <label><input type="checkbox" value="Other" class="contact-reason-checkbox">Other</label><br>
+      <br>
+      <br>
+        <!-- File Upload -->
+  <label for="photo">Upload a Photo of Yourself:</label>
+  <input type="file" id="photo" name="photo" accept="image/*" onchange="previewPhoto()" />
+  <span class="error" id="photoError"></span>
+
+  <!-- Preview Image -->
+  <div id="previewContainer">
+    <img id="photoPreview" src="" alt="Preview" style="display:none; max-width: 150px; max-height: 150px;" />
+  </div>
+  <br>
+      <br>
         <label>
           <input type="checkbox" name="terms" />
-          Agree to terms and conditions
+          By clicking here, you are agreeing to the terms and conditions
         </label>
         <br>
         <span id="termsError" class="error"></span><br>
@@ -72,8 +91,8 @@
 <div id="successMessage" style="color: green; font-size: 16px; margin-top: 10px;"></div>
 
 
-        <!-- Link to proj6.js -->
-  <script src="proj6.js"></script>
+        <!-- Link to proj7.js -->
+  <script src="proj7.js"></script>
 </div>
 
 </body>
