@@ -1,6 +1,6 @@
 // Job Application Tracker
 
-// JobTask class manages individual job applications
+// JobTask class manages individual job applications created by the user
 class JobTask {
     constructor(company, position, stage = "Upload Resume") {
         this.company = company;
