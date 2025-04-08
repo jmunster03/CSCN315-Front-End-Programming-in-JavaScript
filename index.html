@@ -33,6 +33,33 @@
     <h2>Welcome to my page! Here is where you can learn about me.</h2>
     <img src="https://github.com/jmunster03/CSCN315-Front-End-Programming-in-JavaScript/blob/main/images/JordanMunsterWebPage.jpg?raw=true" style="margin-left: 500px;">
 </div>
+</br> 
+<br> 
+<br>
+
+<div id="job-app-track">
+    <h1>Job Application Tracker</h1>
+    <p>Add the Company and Position you applied for and click "Add Job"</p>
+    <p><i>The first stage starts at "Upload Resume". Hit "Advance Stage" to "Schedule Interview" and "Get Job!" Click "Advance Stage" again to get the status: "Got the Job"</i></p>
+    <p>You can remove the job at any time by hitting "Remove".</p>
+    <br>
+
+    <form id="jobForm">
+        <label for="company">Company:</label>
+        <input type="text" id="company" required>
+
+        <label for="position">Position:</label>
+        <input type="text" id="position" required>
+
+        <button type="submit">Add Job</button>
+    </form>
+
+    <h2>Your Job Applications</h2>
+    <ul id="jobList"></ul>
+
+    <script type="module" src="object.js"></script>
+
+</div>
 
 </body>
 </html>
